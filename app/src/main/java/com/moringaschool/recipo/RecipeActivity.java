@@ -23,30 +23,30 @@ public class RecipeActivity extends AppCompatActivity {
             "Chinese rice", "Meat roll", "Pilau", "Tuna", "Mashed potatoes", "Pizza", " Mixed veges", "baked beans",
             "Beef Tacos", "grilled chicken"};
     private String[] servings = new String[] {"2", "5", "6", "8","5","1", "4","9","6","2", "5", "3","4","7"};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
         ButterKnife.bind(this);
 
+//        mListView = (ListView) findViewById(R.id.listView);
+//        mIntroTextView = (TextView) findViewById(R.id.introTextView);
+//
+//        mListView = (ListView) findViewById(R.id.listView);
 
+        MyRecipeArrayAdapter adapter = new MyRecipeArrayAdapter(this, android.R.layout.simple_list_item_1, recipes, servings);
+        mListView.setAdapter(adapter);
 
-        mListView = (ListView) findViewById(R.id.listView);
-        mIntroTextView = (TextView) findViewById(R.id.introTextView);
-
-        mListView = (ListView) findViewById(R.id.listView);
-
-
-        MyRecipeArrayAdapter adapter = new MyRecipeArrayAdapter(this, android.R.layout.simple_list_item_1, recipes, servings); // the arguments must match constructor's parameters!
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                String restaurant = ((TextView)view).getText().toString();
-                Toast.makeText(RecipeActivity.this, restaurant, Toast.LENGTH_LONG).show();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                String recipe = ((TextView)view).getText().toString();
+                Toast.makeText(RecipeActivity.this, recipe, Toast.LENGTH_LONG).show();
             }
         });
 
-        mIntroTextView = (TextView) findViewById(R.id.introTextView);
         Intent intent = getIntent();
         String intro = intent.getStringExtra("intro");
         mIntroTextView.setText("Here are all the recipes for: " + intro);

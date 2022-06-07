@@ -20,9 +20,9 @@ public class MyRecipeArrayAdapter extends ArrayAdapter {
 
     @Override
     public Object getItem(int position) {
-        String restaurant = mRecipes[position];
-        String cuisine = mServings[position];
-        return String.format("%s \nServes great: %s", restaurant, cuisine);
+        String recipe = mRecipes[position];
+        String serving = mServings[position];
+        return String.format("%s \nServes great: %s", recipe, serving);
     }
 
     @Override
