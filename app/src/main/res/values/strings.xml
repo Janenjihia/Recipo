@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Recipo</string>
     <string name="get_all_your_cravings_cooked">Get all your Cravings cooked</string>
+    <string name="your_meal">Your Meal</string>
 </resources>

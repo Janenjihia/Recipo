@@ -12,12 +12,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="200dp"
         android:text="@string/get_all_your_cravings_cooked"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
-
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introductionEditText"
+        android:hint="@string/your_meal"
+        android:textColor="@color/black"
+        android:background="@color/design_default_color_background"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
 
 
 </RelativeLayout>
