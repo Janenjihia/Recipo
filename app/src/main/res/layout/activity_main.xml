@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppins_semibold_italic"
         android:text="@string/get_all_your_cravings_cooked"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -38,8 +39,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-3dp"
         android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/search_recipe"
         android:textColor="@color/black"
-        android:theme="@style/myButtonTheme"/>
+        android:theme="@style/myButtonTheme" />
 
 </RelativeLayout>

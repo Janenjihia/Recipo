@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String intro = mIntroEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
+                intent.putExtra("intro", intro);
                 startActivity(intent);
                 Toast.makeText(MainActivity.this, "Welcome to Recipo", Toast.LENGTH_LONG).show();
             }
