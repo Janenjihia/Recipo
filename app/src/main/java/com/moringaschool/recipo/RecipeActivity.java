@@ -11,9 +11,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class RecipeActivity extends AppCompatActivity {
-    private TextView mIntroTextView;
-    private ListView mListView;
+    @BindView(R.id.introTextView) TextView mIntroTextView;
+    @BindView(R.id.listView) ListView mListView;
 
 
     private String[] recipes = new String[]{"Chicken Curry", "Pasta", "Fried Beef", "mixed veg Rice",
@@ -25,6 +28,9 @@ public class RecipeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
+        ButterKnife.bind(this);
+
+
 
         mListView = (ListView) findViewById(R.id.listView);
         mIntroTextView = (TextView) findViewById(R.id.introTextView);
