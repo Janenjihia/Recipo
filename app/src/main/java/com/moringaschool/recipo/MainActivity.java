@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        mIntroEditText = (EditText) findViewById(R.id.introEditText);
+        mSearchRecipeButton = (Button)findViewById(R.id.searchRecipeButton);
         mSearchRecipeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
