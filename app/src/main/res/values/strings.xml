@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Recipo</string>
+    <string name="get_all_your_cravings_cooked">Get all your Cravings cooked</string>
+    <string name="your_meal">Your Meal</string>
+    <string name="search_recipe">Search Recipe</string>
+    <string name="your_recipes_for">Your recipes for</string>
+</resources>
