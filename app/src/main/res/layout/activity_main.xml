@@ -16,7 +16,7 @@
         android:fontFamily="@font/poppins_semibold_italic"
         android:text="@string/get_all_your_cravings_cooked"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
@@ -28,7 +28,7 @@
         android:layout_marginBottom="10dp"
         android:background="@color/design_default_color_background"
         android:hint="@string/your_meal"
-        android:padding="5dp"
+        android:padding="10dp"
         android:textColor="@color/black" />
 
     <Button
