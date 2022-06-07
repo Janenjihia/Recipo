@@ -36,9 +36,8 @@ public class RecipeActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.listView);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, recipes);
-        mListView.setAdapter(adapter);
 
+        MyRecipeArrayAdapter adapter = new MyRecipeArrayAdapter(this, android.R.layout.simple_list_item_1, recipes, servings); // the arguments must match constructor's parameters!
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
