@@ -15,11 +15,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mSearchRecipeButton;
-    private EditText mIntroEditText;
 
-    @BindView(R.id.searchRecipeButton) Button mFindRestaurantsButton;
-    @BindView(R.id.introEditText) EditText mLocationEditText;
+
+    @BindView(R.id.searchRecipeButton) Button mSearchRecipeButton;
+    @BindView(R.id.introEditText) EditText mIntroEditText;
     @BindView(R.id.appNameTextView) TextView mAppNameTextView;
 
     @Override
@@ -28,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mIntroEditText = (EditText) findViewById(R.id.introEditText);
-        mSearchRecipeButton = (Button)findViewById(R.id.searchRecipeButton);
         mSearchRecipeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
