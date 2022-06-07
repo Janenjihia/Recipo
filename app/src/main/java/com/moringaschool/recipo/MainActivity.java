@@ -14,7 +14,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @BindView(R.id.searchRecipeButton) Button mSearchRecipeButton;
@@ -27,15 +27,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mSearchRecipeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String intro = mIntroEditText.getText().toString();
-                Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
-                intent.putExtra("intro", intro);
-                startActivity(intent);
-                Toast.makeText(MainActivity.this, "Welcome to Recipo", Toast.LENGTH_LONG).show();
-            }
-        });
+        mSearchRecipeButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        String intro = mIntroEditText.getText().toString();
+        Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
+        intent.putExtra("intro", intro);
+        startActivity(intent);
     }
 }
