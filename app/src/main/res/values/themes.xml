@@ -15,6 +15,5 @@
     </style>
     <style name="NoActionBarTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
     <style name="myButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorButtonNormal">#F6F6F6</item>
     </style>
 </resources>
