@@ -1,4 +1,8 @@
 package com.moringaschool.recipo;
 
-public class MyRecipeArrayAdapter {
+import android.widget.ArrayAdapter;
+
+public class MyRecipeArrayAdapter extends ArrayAdapter {
+
+
 }

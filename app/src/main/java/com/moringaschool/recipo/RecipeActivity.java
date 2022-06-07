@@ -22,8 +22,7 @@ public class RecipeActivity extends AppCompatActivity {
     private String[] recipes = new String[]{"Chicken Curry", "Pasta", "Fried Beef", "mixed veg Rice",
             "Chinese rice", "Meat roll", "Pilau", "Tuna", "Mashed potatoes", "Pizza", " Mixed veges", "baked beans",
             "Beef Tacos", "grilled chicken"};
-
-
+    private String[] servings = new String[] {"2", "5", "6", "8","5","1", "4","9","6","2", "5", "3","4","7"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
