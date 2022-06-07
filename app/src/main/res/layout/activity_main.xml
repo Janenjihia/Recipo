@@ -17,17 +17,19 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
+
     <EditText
+        android:id="@+id/introEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/introEditText"
-        android:hint="@string/your_meal"
-        android:textColor="@color/black"
         android:layout_above="@+id/searchRecipeButton"
-        android:background="@color/design_default_color_background"
-        android:padding="5dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="@color/design_default_color_background"
+        android:hint="@string/your_meal"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/searchRecipeButton"
         android:layout_width="match_parent"
