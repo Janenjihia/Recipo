@@ -11,11 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TAG = MainActivity.class.getSimpleName();
     private Button mSearchRecipeButton;
     private EditText mIntroEditText;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String intro = mIntroEditText.getText().toString();
-                Log.d(TAG, intro);
                 Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
                 startActivity(intent);
                 Toast.makeText(MainActivity.this, "Welcome to Recipo", Toast.LENGTH_LONG).show();
