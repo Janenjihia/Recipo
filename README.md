@@ -16,7 +16,7 @@ Android recipe app that one can search for different recipes.
 * Android Studio
 * Java
 * Gradle
-* clone the git repository ()
+* clone the git repository (https://github.com/Janenjihia/Recipo.git)
 * Run the application on Android studio.
 * Run the application locally.
 
