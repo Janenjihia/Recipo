@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_circle.xml" value="0.106" />
         <entry key="app/src/main/res/drawable/ic_favorite_border.xml" value="0.106" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_recipe.xml" value="0.153125" />
       </map>
