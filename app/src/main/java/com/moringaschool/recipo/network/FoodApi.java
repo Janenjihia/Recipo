@@ -1,5 +1,8 @@
 package com.moringaschool.recipo.network;
 
+import com.moringaschool.recipo.models.Categories;
+import com.moringaschool.recipo.models.Meals;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
