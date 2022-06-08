@@ -13,4 +13,6 @@
     <string name="category">category</string>
     <string name="meal_category">meal category</string>
     <string name="favourite">favourite</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="search">search</string>
 </resources>

@@ -35,7 +35,7 @@
                 android:textSize="17sp"
                 android:layout_margin="15dp"
                 android:layout_alignParentBottom="true"
-                android:text="Meal Name"
+                android:text="@string/meal_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
