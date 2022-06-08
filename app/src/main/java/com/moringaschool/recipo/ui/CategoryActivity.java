@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.moringaschool.recipo.R;
 
+
 public class CategoryActivity extends AppCompatActivity {
 
     @Override
