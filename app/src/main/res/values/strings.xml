@@ -12,4 +12,5 @@
     <string name="country">country</string>
     <string name="category">category</string>
     <string name="meal_category">meal category</string>
+    <string name="favourite">favourite</string>
 </resources>
