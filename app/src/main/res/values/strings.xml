@@ -4,4 +4,11 @@
     <string name="your_meal">Your Meal</string>
     <string name="search_recipe">Search Recipe</string>
     <string name="your_recipes_for">Your recipes for</string>
+    <string name="source">source</string>
+    <string name="youtube">youtube</string>
+    <string name="ingredients">ingredients</string>
+    <string name="dot_loading">dot_loading</string>
+    <string name="instructions">instructions</string>
+    <string name="country">country</string>
+    <string name="category">category</string>
 </resources>

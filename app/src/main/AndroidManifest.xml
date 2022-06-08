@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Recipo"
         tools:targetApi="31">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
@@ -25,7 +28,6 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.moringaschool.recipo.ui.MainActivity" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
