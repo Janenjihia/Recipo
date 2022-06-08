@@ -1,4 +1,5 @@
 package com.moringaschool.recipo.adapter;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -12,7 +13,6 @@ import com.moringaschool.recipo.ui.CategoryFragment;
 import java.util.List;
 
 public class ViewPagerCategoryAdapter extends FragmentPagerAdapter {
-
     private List<Categories.Category> categories;
 
     public ViewPagerCategoryAdapter(FragmentManager fm, List<Categories.Category> categories) {
@@ -28,7 +28,7 @@ public class ViewPagerCategoryAdapter extends FragmentPagerAdapter {
         args.putString("EXTRA_DATA_DESC", categories.get(i).getStrCategoryDescription());
         args.putString("EXTRA_DATA_IMAGE", categories.get(i).getStrCategoryThumb());
         fragment.setArguments(args);
-        return fragment;
+        return null;
     }
 
     @Override

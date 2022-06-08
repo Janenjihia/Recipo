@@ -13,4 +13,7 @@ public class CategoryFragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_fragment);
     }
+
+    public void setArguments(Bundle args) {
+    }
 }
