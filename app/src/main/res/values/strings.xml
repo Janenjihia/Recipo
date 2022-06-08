@@ -11,4 +11,5 @@
     <string name="instructions">instructions</string>
     <string name="country">country</string>
     <string name="category">category</string>
+    <string name="meal_category">meal category</string>
 </resources>
