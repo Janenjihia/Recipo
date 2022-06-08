@@ -1,5 +1,4 @@
 package com.moringaschool.recipo.adapter;
-
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
