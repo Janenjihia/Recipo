@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/item_recycler_category_shimmer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_recycler_meal.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_view_pager_header.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_view_pager_header_shimmer.xml" value="0.1" />
       </map>
     </option>
   </component>
