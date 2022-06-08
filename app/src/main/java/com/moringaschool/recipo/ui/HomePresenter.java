@@ -1,9 +1,6 @@
-package com.moringaschool.recipo.dao;
+package com.moringaschool.recipo.ui;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 
 import com.moringaschool.recipo.models.Categories;
 import com.moringaschool.recipo.models.Meals;

@@ -1,11 +1,9 @@
-package com.moringaschool.recipo.dao;
+package com.moringaschool.recipo.ui;
 
 import androidx.annotation.NonNull;
 
 import com.moringaschool.recipo.models.Meals;
 import com.moringaschool.recipo.utils.Utils;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

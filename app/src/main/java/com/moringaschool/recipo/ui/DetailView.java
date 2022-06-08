@@ -1,12 +1,10 @@
-package com.moringaschool.recipo.dao;
+package com.moringaschool.recipo.ui;
 
 import com.moringaschool.recipo.models.Meals;
 
-import java.util.List;
-
-public interface CategoryView {
+public interface DetailView {
     void showLoading();
     void hideLoading();
-    void setMeals(List<Meals.Meal> meals);
+    void setMeal(Meals.Meal meal);
     void onErrorLoading(String message);
 }

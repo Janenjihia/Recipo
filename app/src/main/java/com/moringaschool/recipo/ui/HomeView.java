@@ -1,4 +1,4 @@
-package com.moringaschool.recipo.dao;
+package com.moringaschool.recipo.ui;
 
 import com.moringaschool.recipo.models.Categories;
 import com.moringaschool.recipo.models.Meals;
