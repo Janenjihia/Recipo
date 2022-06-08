@@ -11,6 +11,9 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_recipe.xml" value="0.153125" />
+        <entry key="app/src/main/res/layout/item_recycler_category.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_recycler_category_shimmer.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_recycler_meal.xml" value="0.1" />
       </map>
     </option>
   </component>
