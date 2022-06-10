@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "560805529351",
+    "project_id": "recipo-d44a2",
+    "storage_bucket": "recipo-d44a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560805529351:android:2d0e4ed12804fed29367a2",
+        "android_client_info": {
+          "package_name": "com.moringaschool.recipo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560805529351-9ueksempi7r0alfph6h3ve567r4lr74d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU2cXNPjH4ou-yqQmTB2j5MEQMj24ETVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560805529351-9ueksempi7r0alfph6h3ve567r4lr74d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
