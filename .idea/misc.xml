@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_circle.xml" value="0.106" />
         <entry key="app/src/main/res/drawable/ic_favorite_border.xml" value="0.106" />
         <entry key="app/src/main/res/drawable/rectangular.xml" value="0.1" />

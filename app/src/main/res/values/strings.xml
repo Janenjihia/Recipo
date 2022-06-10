@@ -16,4 +16,5 @@
     <string name="meal_name">Meal Name</string>
     <string name="search">search</string>
     <string name="sign_in">sign in</string>
+    <string name="enter_your_email">Enter your email</string>
 </resources>
