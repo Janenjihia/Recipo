@@ -15,4 +15,5 @@
     <string name="favourite">favourite</string>
     <string name="meal_name">Meal Name</string>
     <string name="search">search</string>
+    <string name="sign_in">sign in</string>
 </resources>
