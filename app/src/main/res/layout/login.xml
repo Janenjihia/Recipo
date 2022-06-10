@@ -76,10 +76,10 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textColor="#ffff"
+        android:textColor="@color/black"
         android:text="@string/log_in"
         android:layout_marginTop="30dp"
-        android:background="#eeeeeee"
+        android:background="@color/white"
         android:textAllCaps="true"
         android:textSize="25sp"
         />

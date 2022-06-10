@@ -103,10 +103,10 @@
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textColor="#ffff"
+        android:textColor="@color/black"
         android:text="@string/sign_up"
         android:layout_marginTop="30dp"
-        android:background="#eeeeeee"
+        android:background="@color/white"
         android:textAllCaps="false"
         android:textSize="25sp"
         />

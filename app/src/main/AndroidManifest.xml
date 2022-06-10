@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CategoryFragment"
+            android:name="com.moringaschool.recipo.ui.CategoryFragment"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.moringaschool.recipo.ui.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CategoryActivity"
+            android:name="com.moringaschool.recipo.ui.CategoryActivity"
             android:label="Category"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".DetailActivity"
+            android:name="com.moringaschool.recipo.ui.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
