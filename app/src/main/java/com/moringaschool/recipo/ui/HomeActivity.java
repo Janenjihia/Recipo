@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.moringaschool.recipo.adapter.RecyclerViewHomeAdapter;
 import com.moringaschool.recipo.adapter.ViewPagerHeaderAdapter;
 import com.moringaschool.recipo.models.Categories;
@@ -28,6 +30,7 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
     public static final String EXTRA_DETAIL = "detail";
+    private FirebaseAuth mAuth;
 
     @BindView(R.id.view_pager_header)
     ViewPager viewPagerMeal;
@@ -40,11 +43,34 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        mAuth = FirebaseAuth.getInstance();
         ButterKnife.bind(this);
 
         presenter = new HomePresenter(this);
         presenter.getMeals();
         presenter.getCategories();
+    }
+
+    @Override
+
+    public void onStart(){
+
+        super.onStart();
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if(currentUser==null)
+
+        { startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+
+        } }
+
+    public void logout() {
+
+        FirebaseAuth.getInstance().signOut();
+
+        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+
     }
 
     @Override

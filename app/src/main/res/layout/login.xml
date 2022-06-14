@@ -92,19 +92,15 @@
         android:layout_marginBottom="40dp"
         >
         <TextView
+            android:id="@+id/sign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/don_t_have_an_account"
-            android:textColor="#ffffff"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_up"
+            android:text="Don't have an account? Sign up!"
             android:textColor="#ffffff"
             android:textSize="20sp"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            />
+
 
     </LinearLayout>
 

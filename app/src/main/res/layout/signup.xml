@@ -26,7 +26,7 @@
         android:layout_marginTop="40dp">
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/register_email"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/rectangular"
@@ -53,7 +53,7 @@
         android:layout_marginTop="40dp">
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/register_password"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/rectangular"
@@ -119,18 +119,12 @@
         android:layout_marginBottom="40dp"
         >
         <TextView
+            android:id="@+id/onboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/have_an_account"
+            android:text="Have an account? Sign in"
             android:textColor="#ffffff"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_in"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
     </LinearLayout>
