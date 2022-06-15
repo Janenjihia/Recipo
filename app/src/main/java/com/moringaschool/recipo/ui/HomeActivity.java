@@ -7,11 +7,18 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.moringaschool.recipo.Constants;
 import com.moringaschool.recipo.adapter.RecyclerViewHomeAdapter;
 import com.moringaschool.recipo.adapter.ViewPagerHeaderAdapter;
 import com.moringaschool.recipo.models.Categories;
@@ -27,10 +34,12 @@ import butterknife.ButterKnife;
 
 
 public class HomeActivity extends AppCompatActivity implements HomeView {
+    private DatabaseReference mSearchedRecipeReference;
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
     public static final String EXTRA_DETAIL = "detail";
     private FirebaseAuth mAuth;
+
 
     @BindView(R.id.view_pager_header)
     ViewPager viewPagerMeal;
@@ -41,6 +50,31 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+        mSearchedRecipeReference = FirebaseDatabase
+                .getInstance()
+                .getReference();
+//                .child(Constants.FIREBASE_CHILD_SEARCHED_RECIPE);
+
+
+        mSearchedRecipeReference.addValueEventListener(new ValueEventListener() { //attach listener
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) { //something changed!
+                for (DataSnapshot recipeSnapshot : dataSnapshot.getChildren()) {
+                    String recipe = recipeSnapshot.getValue().toString();
+                    Log.d("recipes updated", "recipe: " + recipe); //log
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) { //update UI here if error occurred.
+
+            }
+        });
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mAuth = FirebaseAuth.getInstance();
@@ -65,13 +99,13 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
 
         } }
 
-    public void logout() {
-
-        FirebaseAuth.getInstance().signOut();
-
-        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-
-    }
+//    public void logout() {
+//
+//        FirebaseAuth.getInstance().signOut();
+//
+//        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+//
+//    }
 
     @Override
     public void showLoading() {
