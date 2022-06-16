@@ -54,9 +54,7 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
 
         mSearchedRecipeReference = FirebaseDatabase
                 .getInstance()
-                .getReference();
-//                .child(Constants.FIREBASE_CHILD_SEARCHED_RECIPE);
-
+                .getReferenceFromUrl("https://recipo-a24d9-default-rtdb.firebaseio.com");
 
         mSearchedRecipeReference.addValueEventListener(new ValueEventListener() { //attach listener
 

@@ -11,15 +11,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name="com.moringaschool.recipo.ui.CategoryFragment"
-            android:exported="false" />
-        <activity
-            android:name="com.moringaschool.recipo.ui.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.moringaschool.recipo.ui.SignupActivity"
-            android:exported="false" />
+
         <activity
             android:name="com.moringaschool.recipo.ui.LoginActivity"
             android:exported="true">
@@ -29,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.moringaschool.recipo.ui.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.moringaschool.recipo.ui.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.moringaschool.recipo.ui.CategoryFragment"
+            android:exported="false" />
         <activity
             android:name="com.moringaschool.recipo.ui.CategoryActivity"
             android:label="Category"

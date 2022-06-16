@@ -5,5 +5,7 @@
         android:id="@+id/favorite"
         android:title="@string/favourite"
         android:icon="@drawable/ic_favorite_border"
-        app:showAsAction="always"/>
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        />
 </menu>
