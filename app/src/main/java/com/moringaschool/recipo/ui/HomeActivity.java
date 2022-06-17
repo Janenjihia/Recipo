@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -50,6 +51,10 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+        mAuth = FirebaseAuth.getInstance();
+        ButterKnife.bind(this);
 
 
         mSearchedRecipeReference = FirebaseDatabase
@@ -71,12 +76,6 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
 
             }
         });
-
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-        mAuth = FirebaseAuth.getInstance();
-        ButterKnife.bind(this);
 
         presenter = new HomePresenter(this);
         presenter.getMeals();

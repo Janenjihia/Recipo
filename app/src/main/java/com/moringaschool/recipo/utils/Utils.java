@@ -3,10 +3,13 @@ package com.moringaschool.recipo.utils;
 import android.app.AlertDialog;
 import android.content.Context;
 
+import androidx.annotation.NonNull;
+
 import com.moringaschool.recipo.network.FoodApi;
 import com.moringaschool.recipo.network.FoodClient;
 
 public class Utils {
+    @NonNull
     public static FoodApi getApi() {
         return FoodClient.getFoodClient().create(FoodApi.class);
     }
