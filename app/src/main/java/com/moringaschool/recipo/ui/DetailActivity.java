@@ -28,9 +28,9 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.moringaschool.recipo.R;
 import com.moringaschool.recipo.models.Meals;
 import com.moringaschool.recipo.utils.Utils;
-import com.secure.foodycookbook.R;
 import com.squareup.picasso.Picasso;
 
 

@@ -20,12 +20,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.moringaschool.recipo.Constants;
+import com.moringaschool.recipo.R;
 import com.moringaschool.recipo.adapter.RecyclerViewHomeAdapter;
 import com.moringaschool.recipo.adapter.ViewPagerHeaderAdapter;
 import com.moringaschool.recipo.models.Categories;
 import com.moringaschool.recipo.models.Meals;
 import com.moringaschool.recipo.utils.Utils;
-import com.secure.foodycookbook.R;
 
 import java.io.Serializable;
 import java.util.List;
@@ -35,7 +35,6 @@ import butterknife.ButterKnife;
 
 
 public class HomeActivity extends AppCompatActivity implements HomeView {
-    private DatabaseReference mSearchedRecipeReference;
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
     public static final String EXTRA_DETAIL = "detail";
@@ -53,56 +52,11 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        mAuth = FirebaseAuth.getInstance();
         ButterKnife.bind(this);
-
-
-        mSearchedRecipeReference = FirebaseDatabase
-                .getInstance()
-                .getReferenceFromUrl("https://recipo-a24d9-default-rtdb.firebaseio.com");
-
-        mSearchedRecipeReference.addValueEventListener(new ValueEventListener() { //attach listener
-
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) { //something changed!
-                for (DataSnapshot recipeSnapshot : dataSnapshot.getChildren()) {
-                    String recipe = recipeSnapshot.getValue().toString();
-                    Log.d("recipes updated", "recipe: " + recipe); //log
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) { //update UI here if error occurred.
-
-            }
-        });
-
         presenter = new HomePresenter(this);
         presenter.getMeals();
         presenter.getCategories();
     }
-
-    @Override
-
-    public void onStart(){
-
-        super.onStart();
-
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-
-        if(currentUser==null)
-
-        { startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-
-        } }
-
-//    public void logout() {
-//
-//        FirebaseAuth.getInstance().signOut();
-//
-//        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-//
-//    }
 
     @Override
     public void showLoading() {

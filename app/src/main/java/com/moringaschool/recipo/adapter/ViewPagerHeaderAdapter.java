@@ -10,8 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.moringaschool.recipo.R;
 import com.moringaschool.recipo.models.Meals;
-import com.secure.foodycookbook.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.moringaschool.recipo.R;
 import com.moringaschool.recipo.adapter.ViewPagerCategoryAdapter;
 import com.moringaschool.recipo.models.Categories;
-import com.secure.foodycookbook.R;
 
 import java.util.List;
 
