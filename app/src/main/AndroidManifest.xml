@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.moringaschool.recipo.ui.HomeActivity"
+            android:name="com.moringaschool.recipo.ui.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
             android:name="com.moringaschool.recipo.ui.SignupActivity"
             android:exported="false" />
         <activity
-            android:name="com.moringaschool.recipo.ui.LoginActivity"
+            android:name="com.moringaschool.recipo.ui.HomeActivity"
             android:exported="false" />
         <activity
             android:name="com.moringaschool.recipo.ui.CategoryFragment"
