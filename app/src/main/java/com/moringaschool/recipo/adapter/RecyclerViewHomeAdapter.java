@@ -1,17 +1,23 @@
 package com.moringaschool.recipo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.moringaschool.recipo.R;
 import com.moringaschool.recipo.models.Categories;
+import com.moringaschool.recipo.ui.CategoryActivity;
+import com.moringaschool.recipo.ui.CategoryPresenter;
+import com.moringaschool.recipo.ui.LoginActivity;
+import com.moringaschool.recipo.ui.SignupActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -45,6 +51,16 @@ public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerViewHo
 
         String strCategoryName = categories.get(i).getStrCategory();
         viewHolder.categoryName.setText(strCategoryName);
+
+
+
+//        viewHolder.categoryName.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(context,strCategoryName,Toast.LENGTH_LONG).show();
+////                new Intent(context, CategoryActivity.class);
+//
+//            }});
     }
 
 
@@ -53,7 +69,8 @@ public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerViewHo
         return categories.size();
     }
 
-    static class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+    static class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         @BindView(R.id.categoryThumb)
         ImageView categoryThumb;
         @BindView(R.id.categoryName)
@@ -67,7 +84,7 @@ public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerViewHo
 
         @Override
         public void onClick(View v) {
-            clickListener.onClick(v, getAdapterPosition());
+            clickListener.onClick(v, getAbsoluteAdapterPosition());
         }
     }
 

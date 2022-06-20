@@ -1,8 +1,12 @@
 package com.moringaschool.recipo.ui;
 
+import static com.moringaschool.recipo.R.*;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,8 +23,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class CategoryActivity extends AppCompatActivity {
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
+
+    @BindView(R.id.toolbar) Toolbar toolbar;
+
     @BindView(R.id.tabLayout)
     TabLayout tabLayout;
     @BindView(R.id.viewPager)
@@ -72,4 +77,5 @@ public class CategoryActivity extends AppCompatActivity {
         }
         return true;
     }
+
 }
