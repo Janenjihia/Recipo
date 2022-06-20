@@ -88,5 +88,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
 
 
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.daimajia.easing:library:2.3@aar'
+
+
+
 }
 
