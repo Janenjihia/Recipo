@@ -9,6 +9,7 @@ import com.moringaschool.recipo.network.FoodClient;
 public class Constants {
     public static final String BASE_URL = "https://www.themealdb.com/api/json/v1/1/";
     public static final String FIREBASE_CHILD_SEARCHED_RECIPE= "https://recipo-a24d9-default-rtdb.firebaseio.com";
+    public static final String PREFERENCES_RECIPE_KEY = "recipe";
 
     public static FoodApi getApi() {
         return FoodClient.getFoodClient().create(FoodApi.class);

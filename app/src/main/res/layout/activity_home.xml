@@ -17,10 +17,11 @@
             android:id="@+id/header_view"
             android:layout_width="match_parent"
             android:layout_height="300dp">
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
-                android:background="@color/colorPrimary"/>
+                android:background="@color/colorPrimary" />
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -49,18 +50,20 @@
                     android:text="@string/search"
                     android:textColor="@color/colorCardBottomText"
                     android:gravity="center_vertical"
-                    android:drawableLeft="@drawable/ic_baseline_search_24"
-                    android:drawablePadding="10dp"/>
+                    android:drawablePadding="10dp"
+                    app:drawableLeftCompat="@drawable/ic_baseline_search_24" />
             </androidx.cardview.widget.CardView>
+
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/view_pager_header"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:foregroundGravity="center"
-                android:clipToPadding="false"
                 android:layout_below="@+id/card_search"
                 android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:foregroundGravity="center"
                 android:overScrollMode="never">
+
                 <include
                     android:id="@+id/shimmer_meal"
                     layout="@layout/item_view_pager_header_shimmer" />
