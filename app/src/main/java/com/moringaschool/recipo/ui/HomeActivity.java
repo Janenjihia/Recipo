@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,6 +40,10 @@ import butterknife.ButterKnife;
 
 
 public class HomeActivity extends AppCompatActivity implements HomeView {
+
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
     public static final String EXTRA_DETAIL = "detail";
@@ -101,6 +107,8 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
         recyclerViewCategory.setNestedScrollingEnabled(true);
         homeAdapter.notifyDataSetChanged();
 
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mSharedPreferences.edit();
         homeAdapter.setOnItemClickListener(new RecyclerViewHomeAdapter.ClickListener() {
             @Override
             public void onClick(View view, int position) {
@@ -116,6 +124,11 @@ public class HomeActivity extends AppCompatActivity implements HomeView {
     public void onErrorLoading(String message) {
         Utils.showDialogMessage(this, "Title", message);
     }
+
+
+
+
+
 
 
     @Override

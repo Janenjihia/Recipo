@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/layout/item_view_pager_header_shimmer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/splash_screen.xml" value="0.15208333333333332" />
         <entry key="app/src/main/res/menu/logout.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu_search.xml" value="0.1" />
