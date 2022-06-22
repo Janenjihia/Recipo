@@ -15,6 +15,9 @@
         <activity
             android:name="com.moringaschool.recipo.ui.LoginActivity"
             android:exported="true">
+        <activity
+            android:name="com.moringaschool.recipo.ui.SplashscreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

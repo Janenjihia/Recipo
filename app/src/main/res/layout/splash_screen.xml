@@ -11,7 +11,14 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/splash"
         android:layout_centerInParent="true"
-        android:contentDescription="Welcome to Recipo" />
+        android:contentDescription="Welcome to Recipo"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to RECIPO"
+        android:textSize="20sp"
+        tools:visibility="visible" />
 </RelativeLayout>
